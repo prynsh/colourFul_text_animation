@@ -48,7 +48,7 @@ export default function AnimatedText ({children,colorInitial="#dddddd",colorAcce
         )
         gsap.set(allChars,{color:colorInitial})
 
-        const scheduleFinalTransition = (char,index)=>{
+        const scheduleFinalTransition = (char: gsap.TweenTarget,index: unknown)=>{
             if(colorTransitionTimers.current.has(index)){
                 clearTimeout(colorTransitionTimers.current.get(index))
             }
@@ -114,9 +114,9 @@ export default function AnimatedText ({children,colorInitial="#dddddd",colorAcce
     if(React.Children.count(children)===1
         &&
     React.isValidElement(children)){
-        return React.cloneElement(children as React.ReactElement<any>,{
+        return React.cloneElement(children as React.ReactElement<React.RefAttributes<HTMLDivElement>>,{
             
-        ref:containerRef as any})
+        ref:containerRef})
     }
   return (
     <div ref={containerRef} data-copy-wrapper="true">{children}</div>

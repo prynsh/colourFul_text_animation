@@ -1,12 +1,12 @@
 'use client'
 import gsap from "gsap";
-import { ReactLenis } from "lenis/react";
+import { LenisRef, ReactLenis } from "lenis/react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import AnimatedText from "./component/AnimatedText";
 
 export default function Home() {
-  const lenisRef = useRef<any>(null);
+  const lenisRef = useRef<LenisRef>(null);
 
   useEffect(() => {
     function update(time: number) {
@@ -68,7 +68,7 @@ export default function Home() {
             <AnimatedText>
             <p className="text-xl">
               Every breakthrough begins with detail. From the first sketch to <br /> full-scale production, our engineering process is built on
-              accuracy, consistency, and <br /> performance. What you see isn't just a machine it's the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
+              accuracy, consistency, and <br /> performance. What you see isn&apos;t just a machine it&apos;s the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
             </p>
             </AnimatedText>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
           <AnimatedText>
           <p className="text-lg">
             Every breakthrough begins with detail. From the first sketch to <br /> full-scale production, our engineering process is built on
-            accuracy, consistency, and performance. What you see isn't just a machine it's the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
+            accuracy, consistency, and performance. What you see isn&apos;t just a machine it&apos;s the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
           </p>
           </AnimatedText>
           <Image src="/bird.jpg" className="rounded-3xl" alt="bird_image" height={600} width={600} />
@@ -87,7 +87,7 @@ export default function Home() {
           <AnimatedText>
           <p className="text-lg">
             Every breakthrough begins with detail. From the first sketch to <br /> full-scale production, our engineering process is built on
-            accuracy, consistency, and <br /> performance. What you see isn't just a machine it's the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
+            accuracy, consistency, and <br /> performance. What you see isn&apos;t just a machine it&apos;s the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
           </p>
           </AnimatedText>
         </section>
@@ -95,7 +95,7 @@ export default function Home() {
           <AnimatedText>
           <p className="text-lg">
             Every breakthrough begins with detail. From the first sketch to <br /> full-scale production, our engineering process is built on
-            accuracy, consistency, and <br /> performance. What you see isn't just a machine it's the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
+            accuracy, consistency, and <br /> performance. What you see isn&apos;t just a machine it&apos;s the sum of thousands of <br /> deliberate calculations desgined to set new standards in motion.
           </p>
           </AnimatedText>
           <Image src="/bird.jpg" alt="bird_image" className="rounded-3xl" height={600} width={600} />
